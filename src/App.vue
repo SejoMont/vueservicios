@@ -1,25 +1,23 @@
 <template>
-
   <div>
-    <h1>Comunicacion Componentes VUE</h1>
-    <MenuComponent/>
+    <MenuComponent />
+    <br>
     <router-view></router-view>
   </div>
+</template>
   
-  </template>
-  
-  <script>
-  
-  import MenuComponent from './components/MenuComponent.vue';
-  
-  export default {
-    name: 'App',
-    components:{
-      MenuComponent,
-    }
-  
-  }
-  </script>
+<script>
+import MenuComponent from "./components/MenuComponent.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+
+export default {
+  name: "App",
+  components: {
+    MenuComponent,
+  },
+};
+</script>
 
 <style>
 #app {
